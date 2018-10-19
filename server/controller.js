@@ -7,7 +7,6 @@ const Meme  = require("../database/index")
 
 const controller = {
     get: (req,res) => {
-        console.log('d')
         Meme.Meme.find({})
         .then(data => res.status(200).send(data))
         .catch(err => console.error(err))
