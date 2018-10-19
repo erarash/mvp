@@ -1,0 +1,32 @@
+{
+  "name": "hrla25-mvp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.4",
+    "path": "^0.12.7",
+    "react-dom": "^16.5.2",
+    "react": "^16.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon ./server/index.js",
+    "build": "webpack -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erarash/hrla25-mvp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erarash/hrla25-mvp/issues"
+  },
+  "homepage": "https://github.com/erarash/hrla25-mvp#readme"
+}
