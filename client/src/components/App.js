@@ -67,7 +67,8 @@ export default class App extends React.Component {
             top: '3%',
             left: '75%',
             fontSize: '125%',
-            background: 'rgb(202, 60, 60)'
+            background: 'rgb(202, 60, 60)',
+            borderRadius: '4px'
         };
 
 
