@@ -15,6 +15,13 @@ export default class App extends React.Component {
         this.saveMeme = this.saveMeme.bind(this);
     }
 
+
+    // componentDidMount(){
+    //     this.saveMeme()
+    // }
+
+
+
     fetchMemes(e) {
         e.preventDefault();
         axios
@@ -53,19 +60,32 @@ export default class App extends React.Component {
 
 
     render() {
+
+
+        let styles = {
+            position: 'absolute',
+            top: '3%',
+            left: '75%',
+            fontSize: '125%',
+            background: 'rgb(202, 60, 60)'
+        };
+
+
         return (
             <div>
-                <div className="wrapper">
-                <button className="ok"><a href='https://thumbs.dreamstime.com/z/woman-hand-ok-sign-2110301.jpg'>DANGER DONT PUSH</a></button>
-                </div>
+
                 <h1>┬┴┬┴┤ ͡° ͜ʖ ͡°)├┬┴┬┴</h1>
-                
+                <div>
+                    <button style={ styles }>
+                        <a href='https://thumbs.dreamstime.com/z/woman-hand-ok-sign-2110301.jpg'>DANGER!! DONT PUSH</a>
+                    </button>
+                </div>
                 <form>
                     <input onChange={this.handleInput} />
 
-                    <button onClick={this.fetchMemes}>Search yo meme</button>
+                    <button onClick={this.fetchMemes}>gif in a jiff</button>
                 </form>
-                <MemeList memes={this.state.memes} saveMeme={this.saveMeme} />
+                <MemeList memes={this.state.memes} saveMeme={this.saveMeme} savedMemes={this.state.savedMemes} />
             </div>
         )
     }

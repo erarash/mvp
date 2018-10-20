@@ -1,8 +1,15 @@
-.ok{
+/* .ok{
     position: absolute;
     top: 50%;
-    right:100%;
+    right:50%;
 }
-.wrapper{
-    text-align: center
+#wrapper{
+    border: 1px solid black
 }
+#div1 {
+    float: left;
+    
+}
+#div2 {
+    float: right;
+} */

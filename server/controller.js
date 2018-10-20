@@ -5,7 +5,7 @@ const client = require('../giphy')
 
 const controller = {
     get: (req, res) => {
-        client.search('gifs', { "q": req.query.term, "limit": 10 })
+        client.search('gifs', { "q": req.query.term, "limit": 3 })
 
             .then(({ data }) => {
                 res.status(200).send(data)
