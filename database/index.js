@@ -14,6 +14,13 @@ const memeSchema =  new mongoose.Schema({
 
 const Meme = mongoose.model('Meme', memeSchema)
 
+// client.search('gifs', {"q": query, "limit": 10})
+//     .then((response) => {
+//       response.data.forEach((gifObject) => {
+//         console.log(gifObject.url)
+//       })
+//     })
+
 
 
   module.exports.Meme =  Meme 
