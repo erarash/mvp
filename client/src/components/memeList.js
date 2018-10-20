@@ -4,14 +4,14 @@ import MemeListEntry from './memeListEntry';
 export default function MemeList(props){
     return (
         <div>
-            <h3>da memes</h3>
-            <ul>
+            <h3>whatchu need fam</h3>
+            <div class="unstyled">
                 {props.memes.map(meme => (
-                    <li key={meme.id}>
-                    <MemeListEntry meme={meme} /*saveMeme={props.saveMeme}*/ />
-                    </li>
+                    <p key={meme.id}>
+                    <MemeListEntry meme={meme} saveMeme={props.saveMeme} />
+                    </p>
                 ))}
-            </ul>
+            </div>
         </div>
     )
 }
